@@ -180,11 +180,12 @@ static void print_device_info(irecv_client_t client)
 	}
 
 	irecv_devices_get_device_by_client(client, &device);
-	if (device) {
-		printf("PRODUCT: %s\n", device->product_type);
-		printf("MODEL: %s\n", device->hardware_model);
-		printf("NAME: %s\n", device->display_name);
-	}
+	
+	// Force print the device info
+	printf("PRODUCT: %s\n", device->product_type);
+	printf("MODEL: %s\n", device->hardware_model);
+	printf("NAME: %s\n", device->display_name);
+
 }
 
 static void print_devices() {
