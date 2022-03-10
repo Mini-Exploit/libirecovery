@@ -506,7 +506,7 @@ int main(int argc, char* argv[]) {
 				return 0;
 
 			case 'V':
-				printf("%s %s\n", TOOL_NAME, PACKAGE_VERSION);
+				printf("%s %s (fork)\n", TOOL_NAME, PACKAGE_VERSION);
 				return 0;
 
 			default:
